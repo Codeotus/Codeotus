@@ -1,0 +1,52 @@
+{
+  "completions": [
+    {
+      "label": "func",
+      "kind": "Keyword",
+      "insertText": "func ${1:function_name}(${2:args}):\n\t${0}",
+      "documentation": "Define a new function"
+    },
+    {
+      "label": "var",
+      "kind": "Keyword",
+      "insertText": "var ${1:variable_name} = ${0}",
+      "documentation": "Declare a variable"
+    },
+    {
+      "label": "const",
+      "kind": "Keyword",
+      "insertText": "const ${1:CONSTANT_NAME} = ${0}",
+      "documentation": "Declare a constant"
+    },
+    {
+      "label": "_ready",
+      "kind": "Function",
+      "insertText": "func _ready():\n\t${0}",
+      "documentation": "Called when the node enters the scene tree"
+    },
+    {
+      "label": "_process",
+      "kind": "Function",
+      "insertText": "func _process(delta):\n\t${0}",
+      "documentation": "Called every frame. Delta is time since last frame"
+    },
+    {
+      "label": "_physics_process",
+      "kind": "Function",
+      "insertText": "func _physics_process(delta):\n\t${0}",
+      "documentation": "Called every physics frame"
+    },
+    {
+      "label": "extends",
+      "kind": "Keyword",
+      "insertText": "extends ${0:Node}",
+      "documentation": "Inherit from a class"
+    },
+    {
+      "label": "signal",
+      "kind": "Keyword",
+      "insertText": "signal ${1:signal_name}",
+      "documentation": "Define a signal"
+    }
+  ]
+}
