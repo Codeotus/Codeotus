@@ -1,5 +1,5 @@
-.git/
-.git
+# .git/
+# .git
 font/
 lua/user/NerdFonts/
 assets/*.mp4
