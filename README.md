@@ -1,7 +1,7 @@
 # ✨ Codeotus
 
-**The battle-tested, Rust-focused IDE that actually works**  
-FOSS · Lightning-fast · Zero headaches
+**The 105 Kbs Rust-focused IDE that actually works for all**  
+Fully FOSS · Lightning-fast · Zero headaches
 
 ---
 
@@ -26,6 +26,7 @@ FOSS · Lightning-fast · Zero headaches
 ## 🎯 Built to solve real problems
 
 **Tired of:**
+- Heavy Downlaods ?
 - Theme breakage and plugin conflicts that waste your day?
 - Lost sessions and endless nvim configuration rabbit holes?
 - IDE-hopping fatigue and subscription walls?
@@ -39,6 +40,7 @@ FOSS · Lightning-fast · Zero headaches
 ## ⚡ The Codeotus difference
 
 **Zero friction development**
+- Only 105 KBS !
 - 2-3 second startup even on Snapdragon 4 Gen 1
 - Battle-tested in production environments
 - Runs flawlessly on Termux (built there, actually)
