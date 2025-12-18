@@ -114,6 +114,7 @@ require("lazy").setup({
         -- =========================
         { "stevearc/resession.nvim",             version = "v1.2.1" },
         { "ahmedkhalf/project.nvim" },
+        { "mrcjkb/rustaceanvim" },
 
         -- =========================
         -- Daily usefull

@@ -122,6 +122,7 @@ safe_require("user.config.LspConfig.Web.vtsls")
 
 -- Activate Them all --
 safe_require("user.config.LspBatch.lsp")
+safe_require("user.config.LspBatch.Rust.rustaceanvim")
 -- ============= ============= ============= =============
 -- 5. LspBatch Setup
 -- ============= ============= ============= =============
