@@ -114,7 +114,6 @@ require("lazy").setup({
         -- =========================
         { "stevearc/resession.nvim",             version = "v1.2.1" },
         { "ahmedkhalf/project.nvim" },
-        { "mrcjkb/rustaceanvim" },
         {
             "monkoose/neocodeium",
             event = "VeryLazy",
@@ -146,7 +145,6 @@ require("lazy").setup({
         { "mbbill/undotree" },
         { "gbprod/yanky.nvim" },
         { "CRAG666/code_runner.nvim" },
-        { "okuuva/auto-save.nvim",         cmd = "ASToggle" },
 
         -- =========================
         -- File Search

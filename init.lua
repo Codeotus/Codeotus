@@ -22,23 +22,23 @@ end
 -- 1. System core override
 -- ============= ============= ============= =============
 safe_require("user._ui._core._itallic0")
-safe_require("user._sys._plugins")
+safe_require("user.sys.plugins")
 
 -- ============= ============= ============= =============
 -- 1. Inbuilt core
 -- ============= ============= ============= =============
-safe_require("user._sys._inbuilt.last_pos")
+safe_require("user.sys.inbuilt.last_pos")
 
 
 -- ============= ============= ============= =============
 -- 1. BASIC SETTINGS CORE
 -- ============= ============= ============= =============
-safe_require("user._sys._env")
-safe_require("user._sys._options")
-safe_require("user._sys._mappings")
-safe_require("user._sys._autoreload")
-safe_require("user._sys._utilities")
-safe_require("user._sys._mason")
+safe_require("user.sys.env")
+safe_require("user.sys.options")
+safe_require("user.sys.mappings")
+safe_require("user.sys.autoreload")
+safe_require("user.sys.utilities")
+safe_require("user.sys.mason")
 -- ============= ============= ============= =============
 -- 1. BASIC SETTINGS CORE
 -- ============= ============= ============= =============
@@ -81,11 +81,11 @@ safe_require("user._ui.cherry.colors")
 -- ============= ============= ============= =============
 -- 3. Mini Eco_system
 -- ============= ============= ============= =============
-safe_require("user._ecosys.mini.mini_surround")
-safe_require("user._ecosys.mini.mini_notify")
-safe_require("user._ecosys.mini.mini_icons")
-safe_require("user._ecosys.mini.mini_animate")
-safe_require("user._ecosys.mini.mini_jump")
+safe_require("user.ecosys.mini.mini_surround")
+safe_require("user.ecosys.mini.mini_notify")
+safe_require("user.ecosys.mini.mini_icons")
+safe_require("user.ecosys.mini.mini_animate")
+safe_require("user.ecosys.mini.mini_jump")
 
 
 -- ============= ============= ============= =============
@@ -122,7 +122,6 @@ safe_require("user.config.LspConfig.Web.vtsls")
 
 -- Activate Them all --
 safe_require("user.config.LspBatch.lsp")
-safe_require("user.config.LspBatch.Rust.rustaceanvim")
 -- ============= ============= ============= =============
 -- 5. LspBatch Setup
 -- ============= ============= ============= =============
@@ -143,7 +142,6 @@ safe_require("user.config.LspBatch.navic")
 -- 5. LspBatch Setup
 -- ============= ============= ============= =============
 
--- safe_require("user.config.IdeBatch.autosave")
 safe_require("user.config.IdeBatch.code_runner_on_click")
 safe_require("user.config.IdeBatch.nvimtree")
 safe_require("user.config.IdeBatch.telescope")
@@ -169,9 +167,16 @@ safe_require("user.config.IdeBatch.oil")
 safe_require("user.config.IdeBatch.file_organizer_setup")
 
 -- ============= ============= ============= =============
+-- 4. Call the Inbuilt
+-- ============= ============= ============= =============
+
+safe_require("user.config.IdeBatch.call.autosave")
+safe_require("user.config.IdeBatch.call.notific")
+
+-- ============= ============= ============= =============
 -- 4. PluginExtensionConfiguration
 -- ============= ============= ============= =============
-safe_require("user._other.extconfig.overseer")
+safe_require("user.other.extconfig.overseer")
 
 
 -- ============= ============= ============= =============
