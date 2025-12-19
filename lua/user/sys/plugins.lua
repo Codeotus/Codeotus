@@ -166,32 +166,16 @@ require("lazy").setup({
         -- =========================
         -- Colorscheme
         -- =========================
-        { "ellisonleao/gruvbox.nvim",        name = "gruvbox-ellison" },
-        { "projekt0n/github-nvim-theme",     name = "github-theme" },
-        { "lunarvim/colorschemes" }, -- LunarVim’s default colorscheme collection
-        { "folke/tokyonight.nvim" },
-        { "catppuccin/nvim",                 name = "catppuccin" },
+        { "ellisonleao/gruvbox.nvim",    name = "gruvbox-ellison" },
+        { "projekt0n/github-nvim-theme", name = "github-theme" },
+        { "catppuccin/nvim",             name = "catppuccin" },
         { "EdenEast/nightfox.nvim" },
-        { "shaunsingh/nord.nvim" },
-        { "Mofiqul/vscode.nvim" },
-        { "navarasu/onedark.nvim" },
         { "rebelot/kanagawa.nvim" },
-        { "chriskempson/vim-tomorrow-theme" },
-        { "rose-pine/neovim",                name = "rose-pine" },
-        { "sainnhe/everforest",              name = "everforest" },
-        { "sainnhe/gruvbox-material",        name = "gruvbox-material-sainnhe" },
-        { "sainnhe/sonokai",                 name = "sonokai-sainnhe" },
-        { "tiagovla/tokyodark.nvim",         name = "tokyodark-tiagovla" },
-        { "savq/melange-nvim",               name = "melange-warm-savq" },
-        { "rmehri01/onenord.nvim",           name = "onenord-rmehri01",        lazy = false, },
-        { "olivercederborg/poimandres.nvim", name = "poimanders.nvim" },
-        { "AlexvZyl/nordic.nvim",            name = "nordic-Alexy" },
-        { "NvChad/nvim-base16.lua" }, -- Define yourself
-        { "luisiacc/gruvbox-baby",           name = "gruvbox-baby" },
-        { "ribru17/bamboo.nvim",             name = "bamboo" },
-        { "Biscuit-Theme/nvim",              name = "biscuit" },
-        { "olimorris/onedarkpro.nvim",       priority = 1000, },
-        -- { "morhetz/gruvbox",                 name = "gruvbox-mohertz" },
+        { "rose-pine/neovim",            name = "rose-pine" },
+        { "sainnhe/everforest",          name = "everforest" },
+        { "sainnhe/gruvbox-material",    name = "gruvbox-material-sainnhe" },
+        { "ribru17/bamboo.nvim",         name = "bamboo" },
+        { "olimorris/onedarkpro.nvim",   priority = 1000, },
 
         -- NOTE: STAY BEHIND THIS !
     },               -- NOTE: Closing brace for spec table!!!!!!
