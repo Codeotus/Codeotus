@@ -16,7 +16,6 @@ Fully FOSS · Lightning-fast · Zero headaches
 
 ![IMG_20251213_150246](https://github.com/user-attachments/assets/13fa7537-bb8a-4add-bcdb-25d652a417ad)
 ![IMG_20251213_141051](https://github.com/user-attachments/assets/e045b264-80f2-4ff7-b4da-77f487e748d4)
-![IMG_20251213_143250](https://github.com/user-attachments/assets/720f01c5-ecd5-4c05-bc9d-aa39920bd12b)
 ![IMG_20251213_144636](https://github.com/user-attachments/assets/cd27e86e-707d-46ab-95a3-5f11da96dcee)
 
 
