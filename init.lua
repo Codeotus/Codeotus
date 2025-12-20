@@ -194,4 +194,4 @@ safe_require("user.other.extconfig.overseer")
 -- Load the colorscheme at last !
 -- ============= ============= ============= ============= =============
 -- NOTE: SGT colorsheme_name will override
-vim.cmd.colorscheme("nightfox")
+vim.cmd.colorscheme("gruvbox")

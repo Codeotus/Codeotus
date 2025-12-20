@@ -1,4 +1,3 @@
--- ====================
 -- 1. LUASNIP SETUP
 -- ====================
 require('luasnip.loaders.from_vscode').lazy_load()
@@ -52,10 +51,10 @@ blink_capabilities.textDocument.completion.completionItem = {
 -- vim.lsp.handlers["textDocument/signatureHelp"] = function() end
 -- vim.lsp.handlers["textDocument/documentHighlight"] = function() end
 
-local servers = {
-    --  Don't add anything here go to lua/user/config/LspConfig/ & make a file there or edit existing
-}
-vim.lsp.enable(vim.tbl_keys(servers))
+-- local servers = {
+--     --  Don't add anything here go to lua/user/config/LspConfig/ & make a file there or edit existing
+-- }
+-- vim.lsp.enable(vim.tbl_keys(servers))
 
 
 -- Set global border style for LSP floating windows

@@ -106,3 +106,12 @@ blink_capabilities.textDocument.completion.completionItem = {
     deprecatedSupport = true,
     preselectSupport = true,
 }
+
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+    callback = function()
+        vim.api.nvim_set_hl(0, "LspReferenceText", {})
+        vim.api.nvim_set_hl(0, "LspReferenceRead", {})
+        vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
+    end,
+})
