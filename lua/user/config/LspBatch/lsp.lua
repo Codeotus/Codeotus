@@ -56,7 +56,7 @@ blink_capabilities.textDocument.completion.completionItem = {
 -- }
 -- vim.lsp.enable(vim.tbl_keys(servers))
 
-
+vim.lsp.handlers["textDocument/documentHighlight"] = function() end
 -- Set global border style for LSP floating windows
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
     vim.lsp.handlers.hover, {

@@ -1,6 +1,10 @@
 -- Minimal blink.cmp + LSP setup for maximum snippet expansion
 -- Install: saghen/blink.cmp, neovim/nvim-lspconfig
 
+
+vim.api.nvim_set_hl(0, "LspReferenceWrite", { underline = false, bg = "NONE" })
+vim.api.nvim_set_hl(0, "LspReferenceRead", { underline = false, bg = "NONE" })
+vim.api.nvim_set_hl(0, "LspReferenceText", { underline = false, bg = "NONE" })
 -- ====================
 -- 1. BLINK.CMP SETUP
 -- ====================
@@ -50,7 +54,7 @@ require('blink.cmp').setup({
         },
 
         ghost_text = {
-            enabled = true,
+            enabled = false,
         },
     },
 
@@ -94,7 +98,7 @@ require('blink.cmp').setup({
             menu = {
                 auto_show = true
             },
-            ghost_text = { enabled = true },
+            ghost_text = { enabled = false },
         }
     },
     term = {
@@ -113,7 +117,7 @@ require('blink.cmp').setup({
                 },
             },
             menu = { auto_show = nil },
-            ghost_text = { enabled = nil },
+            ghost_text = { enabled = false },
         }
     }
 })
@@ -141,12 +145,3 @@ blink_capabilities.textDocument.completion.completionItem = {
     deprecatedSupport = true,
     preselectSupport = true,
 }
-
-
-vim.api.nvim_create_autocmd("ColorScheme", {
-    callback = function()
-        vim.api.nvim_set_hl(0, "LspReferenceText", {})
-        vim.api.nvim_set_hl(0, "LspReferenceRead", {})
-        vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
-    end,
-})

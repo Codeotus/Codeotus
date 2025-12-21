@@ -142,3 +142,5 @@ safe_require("user.config.IdeBatch.call.notific")
 -- 12. PluginExtensionConfiguration
 -- ============= ============= ============= =============
 safe_require("user.other.extconfig.overseer")
+
+vim.cmd.colorscheme("nightfox")

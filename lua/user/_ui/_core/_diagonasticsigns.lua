@@ -28,10 +28,10 @@ local function apply_diagnostic_config()
         -- Signs in the gutter
         signs = diagnostics_state.signs and {
             text = {
-                [vim.diagnostic.severity.ERROR] = "",
-                [vim.diagnostic.severity.WARN] = " ",
-                [vim.diagnostic.severity.HINT] = " ",
-                [vim.diagnostic.severity.INFO] = "󰬐 "
+                [vim.diagnostic.severity.ERROR] = "󰅚",
+                [vim.diagnostic.severity.WARN]  = "󰀪",
+                [vim.diagnostic.severity.HINT]  = "󰌶",
+                [vim.diagnostic.severity.INFO]  = "󰋽",
             },
 
             numhl = {
