@@ -58,7 +58,6 @@ safe_require("user.sys.mason")
 -- ============= ============= ============= =============
 
 safe_require("user._ui._core._dashboard")
-safe_require("user._ui._core._dapui")
 safe_require("user._ui._core._diagonasticsigns")
 safe_require("user._ui._core._ibl")
 safe_require("user._ui._core._bufferline")
