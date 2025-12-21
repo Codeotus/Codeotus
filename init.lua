@@ -10,8 +10,6 @@ local function safe_require(module)
     end
     return result
 end
--- Use :SGT
-vim.cmd.colorscheme("gruvbox")
 -- ============= ============= ============= =============
 -- 1. System core override
 -- ============= ============= ============= =============
