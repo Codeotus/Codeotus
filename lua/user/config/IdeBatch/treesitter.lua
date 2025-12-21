@@ -127,17 +127,32 @@ require('nvim-treesitter.configs').setup({
             },
         },
     },
+
+    fold = { enable = true },
 })
 
 -- ============================================================================
 -- FOLDING SETUP
 -- ============================================================================
+-- -- Add these after the treesitter setup
+-- vim.opt.foldmethod = 'expr'
+-- vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+-- vim.opt.foldlevelstart = 99
+-- vim.opt.foldenable = true
 
-vim.opt.foldmethod = 'expr'
-vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 99
-vim.opt.foldenable = true
+-- vim.opt.foldmethod = 'expr'
+-- vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+-- vim.opt.foldlevel = 99
+-- vim.opt.foldlevelstart = 99
+-- vim.opt.foldenable = true
+--
+-- --
+-- -- Lua config
+-- vim.opt.foldmethod = 'expr'
+-- vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+-- vim.opt.foldlevel = 99
+-- vim.opt.foldlevelstart = 99
+-- vim.opt.foldenable = true
 
 -- ============================================================================
 -- REMOVE ONLY UNDERLINES AND INDENT GUIDES (KEEP ALL COLORS)

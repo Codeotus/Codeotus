@@ -138,17 +138,21 @@ require("lazy").setup({
         -- =========================
         -- Daily usefull
         -- =========================
-        { "folke/which-key.nvim",          event = "VeryLazy", version = "v3.17.0" },
-        { "karb94/neoscroll.nvim",         config = true,      version = "0.2.0" },
-        { "mg979/vim-visual-multi",        branch = "master", },
-        { "numToStr/Comment.nvim",         version = "v0.8.0" },
+        { "folke/which-key.nvim",    event = "VeryLazy", version = "v3.17.0" },
+        { "karb94/neoscroll.nvim",   config = true,      version = "0.2.0" },
+        { "mg979/vim-visual-multi",  branch = "master", },
+        { "numToStr/Comment.nvim",   version = "v0.8.0" },
         { "kdheepak/lazygit.nvim" },
-        { "echasnovski/mini.nvim",         version = "*" },
+        { "echasnovski/mini.nvim",   version = "*" },
         { "nvzone/showkeys" },
-        { "folke/flash.nvim",              event = "VeryLazy", version = "v2.1.0" },
+        { "folke/flash.nvim",        event = "VeryLazy", version = "v2.1.0" },
         { "mbbill/undotree" },
         { "gbprod/yanky.nvim" },
         { "CRAG666/code_runner.nvim" },
+        {
+            'kevinhwang91/nvim-ufo',
+            dependencies = 'kevinhwang91/promise-async',
+        },
 
         -- =========================
         -- File Search

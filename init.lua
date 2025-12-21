@@ -1,3 +1,13 @@
+-- vim.opt.foldmethod = 'expr'
+-- vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+-- vim.opt.foldlevelstart = 0
+-- vim.opt.foldenable = true
+
+vim.opt.fillchars = { fold = " " }
+vim.opt.foldmethod = "indent"
+vim.opt.foldenable = true
+vim.opt.foldlevel = 99
+
 -- ============================
 -- Neovim Init File
 -- ============================
@@ -30,8 +40,6 @@ safe_require("user.sys.plugins")
 -- 1. Inbuilt core
 -- ============= ============= ============= =============
 safe_require("user.sys.inbuilt.last_pos")
-
-
 -- ============= ============= ============= =============
 -- 1. BASIC SETTINGS CORE
 -- ============= ============= ============= =============
@@ -174,6 +182,7 @@ safe_require("user.config.IdeBatch.undotree")
 safe_require("user.config.IdeBatch.yanky")
 safe_require("user.config.IdeBatch.oil")
 safe_require("user.config.IdeBatch.file_organizer_setup")
+safe_require("user.config.IdeBatch.fold")
 
 -- ============= ============= ============= =============
 -- 4. Call the Inbuilt
