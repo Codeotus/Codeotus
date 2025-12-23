@@ -26,9 +26,6 @@ vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
--- Using ufo provider needs a large value
-vim.o.foldlevel = 99
-vim.o.foldlevelstart = 99
 -- Save folds, cursor position, etc.
 vim.opt.viewoptions = { "folds", "cursor" }
 

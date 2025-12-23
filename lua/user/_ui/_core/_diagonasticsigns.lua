@@ -189,16 +189,18 @@ vim.api.nvim_create_user_command('CycleDiagnosticMode', cycle_diagnostic_mode,
     { desc = 'Cycle through diagnostic modes' })
 vim.api.nvim_create_user_command('ShowDiagnostic', show_diagnostic_popup, { desc = 'Show diagnostic popup' })
 
--- Keybindings
-vim.keymap.set('n', '<leader>tt', toggle_diagnostics, { desc = 'Toggle diagnostics' })
-vim.keymap.set('n', '<leader>tv', toggle_virtual_text, { desc = 'Toggle virtual text' })
-vim.keymap.set('n', '<leader>ts', toggle_signs, { desc = 'Toggle signs' })
-vim.keymap.set('n', '<leader>tu', toggle_underline, { desc = 'Toggle underline' })
-vim.keymap.set('n', '<leader>tp', toggle_auto_popup, { desc = 'Toggle auto popup' })
-vim.keymap.set('n', '<leader>ti', toggle_update_in_insert, { desc = 'Toggle update in insert' })
-vim.keymap.set('n', '<leader>tm', cycle_diagnostic_mode, { desc = 'Cycle diagnostic mode' })
-vim.keymap.set('n', '<leader>dd', show_diagnostic_popup, { desc = 'Show diagnostic' })
-vim.keymap.set('n', 'gl', show_diagnostic_popup, { desc = 'Show line diagnostic' })
+-- Diagnostics Toggles
+vim.keymap.set('n', '<leader>udt', toggle_diagnostics, { desc = 'Toggle All Diagnostics' })
+vim.keymap.set('n', '<leader>udm', cycle_diagnostic_mode, { desc = 'Cycle Diagnostic Mode' })
+vim.keymap.set('n', '<leader>udv', toggle_virtual_text, { desc = 'Toggle Virtual Text' })
+vim.keymap.set('n', '<leader>uds', toggle_signs, { desc = 'Toggle Signs' })
+vim.keymap.set('n', '<leader>udu', toggle_underline, { desc = 'Toggle Underline' })
+vim.keymap.set('n', '<leader>udp', toggle_auto_popup, { desc = 'Toggle Auto Popup' })
+vim.keymap.set('n', '<leader>udi', toggle_update_in_insert, { desc = 'Toggle Update in Insert' })
+
+-- Show Diagnostics (keep separate for quick access)
+vim.keymap.set('n', '<leader>udS', show_diagnostic_popup, { desc = 'Show Diagnostic' })
+vim.keymap.set('n', 'gl', show_diagnostic_popup, { desc = 'Show Line Diagnostic' })
 
 -- Optional: Show diagnostics count in statusline
 vim.api.nvim_create_autocmd({ "DiagnosticChanged", "BufEnter" }, {
